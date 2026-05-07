@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "simple_fps_overlay",
+  "version": "${version}",
+  "name": "Simple FPS Overlay",
+  "description": "A clean, minimal FPS overlay mod.",
+  "authors": [
+    "Shirjeel"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ShirjeellAfzal/",
+    "sources": "https://github.com/ShirjeellAfzal/FPS-Overlay"
+  },
+  "license": "MIT",
+  "icon": "assets/simple_fps_overlay/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.fpsoverlay.SimpleFPSOverlay"
+    ],
+    "modmenu": [
+      "com.example.fpsoverlay.gui.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cloth-config2": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
